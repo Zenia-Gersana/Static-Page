@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html, body{
+    background-color: #FA9AA5;
+    color: #AA3F52;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    height: 100%;
+    margin: 0;
+}
+
+.clouds {
+  align-items: center;
+  display: flex;
+  height: calc(100% - 125px);
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+
+.clouds::before {
+    background-image: url("img/clouds.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    height: 100%;
+    opacity: 0.4;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+
+.header{
+    align-items: center;
+    background-color: white;
+    display: flex;
+    height: 125px;
+    justify-content: space-between;
+    padding: 0 150px;
+    width: auto;
+    z-index: 999;
+}
+
+.header #left{
+    display: flex;
+    flex-direction: column;
+}
+
+.header #links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header #links *{
+    font-size: 27px;
+    font-style: italic;
+    font-weight: 700;
+    margin: 0 30px;
+}
+
+.header #links> *:last-child{
+    margin: 0 0 0 30px !important;
+}
+
+h1{
+    font-family: Arvo, Playbill, serif;
+    font-style: italic;
+    margin: -10px 0 0 0;
+    font-size: 44px;
+}
+
+.lContainer{
+    border-left: 1px solid white;
+    display: flex; 
+    flex-direction: column; 
+    margin: 40px 0 40px 150px; 
+    padding-left: 40px; 
+}
+
+.family{
+    background-image: url("img/family.jpg");
+    background-position: 0;
+    background-size: cover;
+    border-radius: 0 60px 0 0;
+    height: 330px;
+    width: 575px;
+}
+
+.f_desc{
+    background-color: white;
+    border-radius: 0 0 60px 0;
+    box-sizing: border-box;
+    font-style: italic;
+    height: auto;
+    line-height: 1.5em;
+    padding: 20px;
+    text-align: center;
+    width: 575px;
+}
+
+.connor{
+    background-image: url("img/connor.jpg");
+    background-position: 0 -80px;
+    background-size: cover;
+    border-radius: 999px;
+    box-sizing: border-box;
+    color: white;
+    font-weight: 700;
+    height: 270px;
+    padding-top: 30px;
+    position: absolute;
+    text-align: center;
+    width: 270px;
+    z-index: 1;
+}
+
+.cText{
+    background-color: white;
+    border-radius: 0 60px 60px 0;
+    box-sizing: border-box;
+    height: 270px;
+    left: 135px;
+    padding: 40px 40px 40px 165px;
+    position: relative;
+    width: 435px;
+}
+
+.cText #hobbies{
+    border-left: 1px solid #AA3F52;
+    margin-top: 5px;
+    font-size: 24px;
+    font-style: italic;
+    line-height: 1.5em;
+    padding-left: 25px;
+}
