@@ -74,7 +74,7 @@ h1{
     border-left: 1px solid white;
     display: flex; 
     flex-direction: column; 
-    margin: 40px 0 40px 150px; 
+    margin: 40px 0 40px 0; 
     padding-left: 40px; 
 }
 
@@ -133,4 +133,23 @@ h1{
     font-style: italic;
     line-height: 1.5em;
     padding-left: 25px;
+}
+
+.me{
+    background-image: url("img/zenia.jpg");
+    background-size: cover;
+    width: 795px;
+    height: 795px;
+    border-radius: 999px 0 999px 999px;
+    background-position: 0 -300px;
+}
+
+.mText{
+    position: relative;
+    width: 270px;
+    height: 270px;
+    border-radius: 999px 0 999px 999px;
+    background-color: white;
+    left: 100px;
+    transform: translateY(200%);
 }
